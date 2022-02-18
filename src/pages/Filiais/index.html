@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <title>Dulce Caffetteria</title>
         
-        <link rel="stylesheet" type="text/css" href="Styles/style.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
         <div id="container">
@@ -15,6 +15,7 @@
                 <input id="cep" type="text" name="text1">
                 </p>
                 <input id="b1" type="button" value="Procurar filial" >
+                <h1 id="testar"></h1>
             </div>
             <div id="footer" class="display-flex">
                 <h3>Filiais que possuímos</h3>
@@ -27,6 +28,12 @@
             </div>
         </div>
         <script>
+            async function alterar() {
+                if(document.getElementById('h3cidade').innerText == 'Blumenau'){
+                    document.getElementById('testar').innerHTML = 'Venha nos visitar'
+                }
+            }
+
             async function teste() {
                 const cep = document.getElementById('cep').value;
                 const response = await fetch(`http://viacep.com.br/ws/${cep}/json/`);
@@ -34,6 +41,7 @@
                 document.getElementById('h2rua').innerHTML = json.logradouro;
                 document.getElementById('h2bairro').innerHTML = json.bairro;
                 document.getElementById('h3cidade').innerHTML = json.localidade;
+                alterar();
             };
             document.getElementById('b1').addEventListener('click', teste);
         </script>

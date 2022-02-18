@@ -21,7 +21,7 @@ body {
 /* -----MENU PRINCIPAL COMEÇA AQUI----- */
 #menu{
     width: 100%;
-    height: 14vh;
+    height: 100px;
     background-color: black;
     flex-direction: row;
     display: flex;
@@ -32,7 +32,7 @@ body {
     display: flex;
     align-items: center;
     width: 50%;
-    height: 14vh;
+    height: 100px;
     justify-content: left;
     padding-left: 2vw;
 }
@@ -42,7 +42,7 @@ body {
     align-items: center;
     flex-direction: row; 
     width: 50%;
-    height: 14vh;
+    height: 100px;
     justify-content: right;
 }
 
@@ -66,12 +66,12 @@ body {
     flex-direction: column;
     display: flex;
     width: 70vw;
-    height: 30vh;
+    height: 250px;
 }
 
 .direcionador {
     width: 20vw;
-    height: 8vh;
+    height: 75px;
     background-color:burlywood;
     align-items: center;
     justify-content: center;
@@ -104,14 +104,14 @@ body {
     flex-direction: row;
     display: flex;
     width: 70vw;
-    height: 40vh;
+    height: 300px;
     color: brown;
 }
 
 #valor {
     color: brown;
     width: 14vw;
-    height: 11vh;
+    height: 85px;
     border: solid 2px;
     border-color:brown;
     border-radius: 4px;
@@ -147,18 +147,18 @@ body {
 footer{
     margin-top: 8vh;
     width: 100%;
-    height: 40vh;
+    height: 300px;
     background-color: #39231b;
     position: static;
     bottom: 0;
 }
 
 #div-footer{
-    margin-top: 8vh;
+    margin-top: 60px;
     border-top: solid 2px;
     border-color: #946737;
     width: 100%;
-    height: 30vh;
+    height: 200px;
     position: static;
     bottom: 0;   
     align-items: center;
