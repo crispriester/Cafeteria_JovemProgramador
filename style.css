@@ -5,38 +5,185 @@
 }
 
 body {
-    background-color: #413835;
+    background-color: white;
     justify-content: center;
     display: flex;
     align-items: center;
     flex-direction: column;
-}
-
-#container {
-    background-color: #f1e6e2;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    display: flex;
-    width: 80vw;
-    height: 30vh;
 }
 
 .border{
-    border-bottom:solid 5px;
-    border-color: black;
+    border-bottom:solid 2px;
+    border-color: rgb(155, 114, 114);
+    border-radius: 4px;
 }
 
-#conteudo {
-    background-color: #f1e6e2;
+/* -----MENU PRINCIPAL COMEÇA AQUI----- */
+#menu{
+    width: 100%;
+    height: 14vh;
+    background-color: black;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+}
+
+#left-menu{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 14vh;
+    justify-content: left;
+    padding-left: 2vw;
+}
+
+#right-menu{
+    display: flex;
+    align-items: center;
+    flex-direction: row; 
+    width: 50%;
+    height: 14vh;
+    justify-content: right;
+}
+
+.link-pages{
+    margin-right: 6vw;
+    text-decoration: none;
+    color: #946737;
+}
+
+.link-pages:hover {
+    color: burlywood;
+    cursor: pointer;
+}
+/* -----MENU PRINCIPAL TERMINA AQUI----- */
+
+/* -----MENU INTERNO COMEÇA AQUI----- */
+#container {
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    width: 70vw;
+    height: 30vh;
+}
+
+.direcionador {
+    width: 20vw;
+    height: 8vh;
+    background-color:burlywood;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 70px 40px 90px 40px;
+    border-radius: 4px;
+    font-size: 23px;
+}
+
+.direcionador:hover {
+    background-color: burlywood;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+#teste {
+    background-color: white;
     align-items: center;
     justify-content: center;
     flex-direction: row;
     display: flex;
-    width: 80vw;
+}
+/* -----MENU INTERNO ACABA AQUI----- */
+
+/* -----CORPO DA PÁGINA COMEÇA AQUI----- */
+#conteudo {
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    display: flex;
+    width: 70vw;
     height: 40vh;
+    color: brown;
 }
 
-p {
-    padding: 0 0 0 40px;
+#valor {
+    color: brown;
+    width: 14vw;
+    height: 11vh;
+    border: solid 2px;
+    border-color:brown;
+    border-radius: 4px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    display: flex;
 }
+
+#melhores-cardapio {
+    display: flex;
+    flex-direction: column;
+}
+
+#promocoes {
+    display: none;
+    flex-direction: column;
+}
+
+#cor-descricao {
+    color: black;
+}
+
+#border-img{
+    border: solid 2px;
+    border-color:brown;
+    border-radius: 4px;
+}
+/* -----CORPO DA PÁGINA TERMINA AQUI----- */
+
+/* FOOTER COMEÇA AQUI */
+footer{
+    margin-top: 8vh;
+    width: 100%;
+    height: 40vh;
+    background-color: #39231b;
+    position: static;
+    bottom: 0;
+}
+
+#div-footer{
+    margin-top: 8vh;
+    border-top: solid 2px;
+    border-color: #946737;
+    width: 100%;
+    height: 30vh;
+    position: static;
+    bottom: 0;   
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    display: flex; 
+}
+
+#info-footer{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex; 
+    padding: 0 120px 0 120px;
+    color: white;
+}
+
+#titulo-info{
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: solid 4px;
+    border-color: #946737;
+}
+
+#conteudo-info{
+    text-align: center;
+}
+

@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Gloria+Hallelujah&family=Homemade+Apple&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.bg-dark {
+    background-color: #170e0bf3 !important;
+}
+
+.container-inicio {
+    height: 95vh;
+    background-color: #800404;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#menu-home {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 100vw;
+    height: 9vh;
+    
+    background-color: rgba(0, 255, 255, 0);
+    position: fixed;
+}
+
+.logo img {
+    width: 60px;
+    height: 50px;
+}
+
+#div-texto-inicio {
+    width: 40%;
+}
+
+#div-texto-inicio p {
+    width: 300px;
+    margin-top: 40%;
+    margin-left: 28%;
+    text-align: right;
+    font-size: 1.1em;
+    color: white;
+    font-family: 'Kalam', cursive;
+}
+
+.botoes {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.botoes button {
+    color: rgb(255, 255, 255);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-inline: 30px;
+    font-size: medium;
+    border: none;
+    background-color: transparent;
+}
+
+.botoes button:hover div {
+    cursor: pointer;
+    margin-top: 2px;
+    height: 2px;
+    background-color: rgb(160, 112, 7);
+}
+
+#divisoria {
+    width: 50%;
+    height: 8vh;
+}
+
+#imagem-tela-inicial {
+    right: 0px;
+    height: 88vh;
+    width: 80%;
+    background-image: url(../../assets/imagem-com-sombra.png);
+    background-size: cover;
+}
+
+
+
+#titulo-cafeteria {
+    position: absolute;
+    top: 8%;
+    left: 8%;
+    color: white;
+    font-family: 'Homemade Apple', cursive;
+    font-size: 320%;
+}
