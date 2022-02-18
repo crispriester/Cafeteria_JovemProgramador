@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.display-flex{
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-direction:column;
+}
+#container{
+    width:100%;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #f1e6e2 ;
+}
+#footer{
+    height: 35%;
+    width: 40%;
+    background-color: rgb(211, 189, 157);
+    border-radius: 5px 5px 5px 5px; 
+}
