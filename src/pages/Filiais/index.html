@@ -1,21 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Dulce Caffetteria</title>
-        
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
-    <body>
-        <div id="container">
-            <div class="display-flex">
-                <h1>Venha nos visitar</h1>
-                <p>
-                <label for="text1"> CEP </label>
-                <input id="cep" type="text" name="text1">
-                </p>
-                <input id="b1" type="button" value="Procurar filial" >
-                <h1 id="testar"></h1>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dulce Caffetteria</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <!--MENU PRINCIPAL COMEÇA AQUI-->
+
+    <div id="menu">
+      <div id="left-menu">
+        <img src="imagens/cafe.png" alt="Ícone de Café" width="80vw" />
+
+        <img src="imagens/cafe.png" alt="Ícone de Café" width="40vw" />
+
+        <img src="imagens/cafe.png" alt="Ícone de Café" width="80vw" />
+      </div>
+      <div id="right-menu">
+        <a class="link-pages" href="#"><h1>Valores</h1></a>
+
+        <a class="link-pages" href="#"><h1>Localização</h1></a>
+
+        <a class="link-pages" href="#"><h1>Sobre</h1></a>
+      </div>
+    </div>
+    <!--MENU PRINCIPAL TERMINA AQUI-->
+    <div id="container">
+      <div class="display-flex">
+        <h1 id="texto">Venha nos visitar</h1>
+        <p>
+          <label for="text1"> CEP </label>
+          <input id="cep" type="text" name="text1" />
+        </p>
+        <input id="b1" type="button" value="Procurar filial" />
+      </div>
+      <div id="content" class="display-flex">
+        <h3>Filiais que possuímos</h3>
+        <h4>CEP 89068-001, Rua Pedro Zimmermann 756, Itoupava Central, Blumenau-SC</h4>
+        <h4>CEP 89110‑004, Rua Pedro Zimmermann 756, Itoupava Central, Blumenau-SC</h4>
+        <h3>Seu enderço da pesquisa</h3>
+        <h4 id="h2rua">Informe seu endereço.-</h4>
+        <h4 id="h2bairro"></h4>
+        <h4 id="h3cidade"></h4>
+        <h4 id="mensagem"></h4>
+      </div>
+    </div>
+    <footer>
+        <div id="div-footer">
+            <div id="info-footer">
+                <div id="titulo-info"><h2>Contato</h2></div>
+                <div id="conteudo-info">
+                    <h3>dolce.caffetteria@gmail.com</h3>
+                    <h3>(47) 3337-2537 ou</h3>
+                    <h3>(47) 98451-2537</h3> 
+                </div>
             </div>
             <div id="info-footer">
                 <div id="titulo-info"><h2>Endereço</h2></div>
@@ -35,23 +74,29 @@
                 </div>
             </div>
         </div>
-        <script>
-            async function alterar() {
-                if(document.getElementById('h3cidade').innerText == 'Blumenau'){
-                    document.getElementById('testar').innerHTML = 'Venha nos visitar'
-                }
-            }
-
-            async function teste() {
-                const cep = document.getElementById('cep').value;
-                const response = await fetch(`http://viacep.com.br/ws/${cep}/json/`);
-                const json = await response.json();
-                document.getElementById('h2rua').innerHTML = json.logradouro;
-                document.getElementById('h2bairro').innerHTML = json.bairro;
-                document.getElementById('h3cidade').innerHTML = json.localidade;
-                alterar();
-            };
-            document.getElementById('b1').addEventListener('click', teste);
-        </script>
-    </body>
+    </footer>
+    <script>
+         async function validacao(){
+          if( document.getElementById("h3cidade").innerText == "Blumenau"){
+            document.getElementById("mensagem").innerHTML = "Temos uma filial em Blumenau. Venha nos visitar! "
+          }
+          else if(document.getElementById("h3cidade").innerText == "Gaspar"){
+            document.getElementById("mensagem").innerHTML = "Temos uma filial em Gaspar. Venha nos visitar! "
+          }
+          else{
+            document.getElementById("mensagem").innerHTML = "Infelizmente ainda não temos uma filial em sua cidade "
+          } 
+      }
+      async function teste(){
+        const cep = document.getElementById("cep").value;
+        const response = await fetch(`http://viacep.com.br/ws/${cep}/json/`);
+        const json = await response.json();
+        document.getElementById("h2rua").innerHTML = json.logradouro;
+        document.getElementById("h2bairro").innerHTML = json.bairro;
+        document.getElementById("h3cidade").innerHTML = json.localidade;
+        validacao();
+      }
+      document.getElementById("b1").addEventListener("click", teste) ; 
+    </script>
+  </body>
 </html>
