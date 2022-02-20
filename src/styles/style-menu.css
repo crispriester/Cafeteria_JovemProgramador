@@ -1,0 +1,73 @@
+/* Para o menu do home: */ 
+.bg-dark {
+    background-color: #170e0bf8 !important;
+}
+
+.bk-transparente {
+    background-color: #170e0b00;
+}
+
+/* Menu em todas as páginas: */
+#menu-home {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 100vw;
+    height: 10vh;
+    
+    z-index: 1;
+    position: fixed;
+    transition: all 0.6s;
+}
+
+.divisoria {
+    width: 50%;
+    height: 8vh;
+}
+
+#div-imagem-menu {
+    width: 60px;
+    height: 50px;
+}
+
+.imagem-logo {
+    background-image: url(../assets/cafepngbranco.png);
+    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.botoes {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.botoes a {
+    text-decoration: none;
+    margin-inline: 35px;
+    border: none;
+    background-color: transparent;
+}
+
+.botoes a {
+    color: rgb(255, 255, 255);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2em;
+}
+
+.botoes a:hover {
+    cursor: pointer;
+}
+
+.botoes a:hover div {
+    margin-top: 2px;
+    height: 2px;
+    background-color: rgb(160, 112, 7);
+}
+
+:target {
+    scroll-margin-top: 10.1em;
+}

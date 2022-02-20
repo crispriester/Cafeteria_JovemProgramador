@@ -2,11 +2,12 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <title>Dolce Caffetteria</title>
 
     <!--Styles CSS: -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../../styles/style-footer.css">
+    <link rel="stylesheet" href="../../styles/style-menu.css">
     <!--Favicon:-->
     <link rel="icon" type="imagem/png" href="../../assets/favicon.png" />
     <!--Jquery-->
@@ -14,10 +15,10 @@
 </head>
 <body>
     <!--=== Menu Começo ===-->
-    <header id="menu-home" >
+    <header id="menu-home" class="bk-transparente">
         <div id="div-imagem-menu"></div>
         
-        <div id="divisoria"></div>
+        <div class="divisoria"></div>
         <div class="botoes">
             <a href="../Produtos/index.html">
                 Valores <div></div>
@@ -49,7 +50,6 @@
             <div id="foto-cafe"></div>
             <div class="flex-column align-items-center titulo-paragrafo">
                 <h1>Por que escolher a gente?</h1>
-                <hr class="divisor-texto-paragrafo">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi perferendis aliquid error vitae, est iste, cumque nesciunt eum pariatur veritatis reprehenderit. Nostrum quo maxime eos ullam aspernatur nisi neque alias.</p>
             </div>
         </div>
@@ -59,7 +59,6 @@
         <div id="sobre" class="flex-row">
              <div class="flex-column align-items-center titulo-paragrafo">
                 <h1>Sobre nós</h1>
-                <hr class="divisor-texto-paragrafo">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi perferendis aliquid error vitae, est iste, cumque nesciunt eum pariatur veritatis reprehenderit. Nostrum quo maxime eos ullam aspernatur nisi neque alias.</p>
             </div>
             <div id="foto-cafeteria-refeitorio"></div>
@@ -67,39 +66,63 @@
         <!--=== Sobre termina ===-->
         <hr>
         <!--=== Contate-nos Começa ===-->
+        <hr class="hr-faixa">
         <div id="contate-nos" class="flex-row">
             <div id="cafe-esquerda" class="imagem-cafe"></div>
             <div class="flex-column">
-
+                <h1>Contate-nos!</h1>
+                <div id="inputs-contato" class="flex-column">
+                    <label for="input-nome">Nome</label>
+                    <input type="text" name="input-nome" placeholder="Seu nome">
+                    
+                    <label for="telefone">Telefone</label>
+                    <input type="text" name="telefone" placeholder="(DDD) 00000-0000"/>
+                    
+                    <label for="input-email">E-mail</label>
+                    <input type="email" name="input-email" placeholder="e-mail">
+                    
+                    <label for="por-onde-nos-conheceu">Por onde nos conheceu?</label>
+                    <input type="text" name="por-onde-nos-conheceu" list="escolhas" placeholder="Escolha">
+                    <datalist id="escolhas">
+                        <option value="Facebook"></option>
+                        <option value="Instagram"></option>
+                        <option value="Twitter"></option>
+                        <option value="Rádio"></option>
+                        <option value="Outro"></option>
+                    </datalist>
+                    
+                </div>
             </div>
-            <div id="cafe-esquerda" class="imagem-feijao"></div>
+            <div id="cafe-direita" class="imagem-cafe"></div>
        </div>
+       <hr class="hr-faixa">
+       <hr>
        <!--=== Contate-nos termina ===-->
     </div>
     
     <!--=== Footer começa ===-->
         
     <footer>
-        <div id="div-footer">
-            <div id="info-footer">
-                <div id="titulo-info"><h2>Contato</h2></div>
-                <div id="conteudo-info">
+        <div class="div-footer">
+            <div class="info-footer">
+                <div class="titulo-info"><h2>Contato</h2></div>
+                <div class="conteudo-info">
                     <h3>dolce.caffetteria@gmail.com</h3>
                     <h3>(47) 3337-2537 ou</h3>
                     <h3>(47) 98451-2537</h3> 
                 </div>
             </div>
-            <div id="info-footer">
-                <div id="titulo-info"><h2>Endereço</h2></div>
-                <div id="conteudo-info">
+            <div class="info-footer">
+                <div class="titulo-info"><h2>Endereço</h2></div>
+                <div class="conteudo-info">
                     <h3>Rua São Paulo, Blumenau - SC</h3>
                     <h3>número 05.</h3>
                     <h3>Em frente a Furb</h3>
                 </div>
             </div>
-            <div id="info-footer">
-                <div id="titulo-info"><h2>Criadores</h2></div>
-                <div id="conteudo-info">
+            <div class="info-footer">
+                <div class="titulo-info"><h2>Criadores</h2></div>
+                <div class="conteudo-info">
                     <h3>Cristina Priester</h3>
                     <h3>João Marcos da Silva</h3>
                     <h3>Vanessa da Cunha Lopez</h3> 

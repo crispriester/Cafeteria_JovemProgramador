@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Quicksand:wght@300&family=Zen+Kaku+Gothic+Antique:wght@300&display=swap');
 
 /* FOOTER COMEÇA AQUI */
 footer{
@@ -7,10 +8,9 @@ footer{
     height: 40vh;
 
     background-color: #39231b;
-    position: static;
 }
 
-#div-footer{
+.div-footer{
     border-top: solid 2px;
     border-color: #946737;
 
@@ -20,28 +20,32 @@ footer{
     bottom: 0;   
 
     align-items: flex-end;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: row;
     display: flex; 
 }
 
-#info-footer{
+.info-footer{
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
     display: flex; 
 
-    padding: 0 120px 0 120px;
     color: white;
 }
 
-#titulo-info{
+.titulo-info{
     margin-bottom: 20px;
     padding-bottom: 20px;
     border-bottom: solid 4px;
     border-color: #946737;
+
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-size: 1em;
 }
 
-#conteudo-info{
+.conteudo-info{
     text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size:small;
 }

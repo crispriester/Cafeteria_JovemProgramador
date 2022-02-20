@@ -5,27 +5,30 @@
     <title>Dulce Caffetteria</title>
 
     <link rel="stylesheet" type="text/css" href="style.css" />
+
   </head>
   <body>
     <!--MENU PRINCIPAL COMEÇA AQUI-->
-
-    <div id="menu">
-      <div id="left-menu">
-        <img src="../../assets/cafe.png" alt="Ícone de Café" width="80vw" />
-
-        <img src="../../assets/cafe.png" alt="Ícone de Café" width="40vw" />
-
-        <img src="../../assets/cafe.png" alt="Ícone de Café" width="80vw" />
+    <header id="menu-home" class="bg-dark">
+      <a href="index.html">
+        <div id="div-imagem-menu" class="imagem-logo"></div>
+      </a>
+      
+      <div class="divisoria"></div>
+      <div class="botoes">
+          <a href="../Produtos/index.html">
+              Valores <div></div>
+          </a>
+           <a href="../Filiais/index.html">
+              Localização <div></div>
+          </a>
+          <a href="../Main/index.html#sobre">
+              Sobre <div></div>
+          </a>
       </div>
-      <div id="right-menu">
-        <a class="link-pages" href="#"><h1>Valores</h1></a>
-
-        <a class="link-pages" href="#"><h1>Localização</h1></a>
-
-        <a class="link-pages" href="#"><h1>Sobre</h1></a>
-      </div>
-    </div>
+  </header>
     <!--MENU PRINCIPAL TERMINA AQUI-->
+
     <div id="container">
       <div class="display-flex">
         <h1 id="texto">Venha nos visitar</h1>
@@ -46,35 +49,39 @@
         <h4 id="mensagem"></h4>
       </div>
     </div>
+
+    <!--FOOTER COMEÇA-->
     <footer>
-        <div id="div-footer">
-            <div id="info-footer">
-                <div id="titulo-info"><h2>Contato</h2></div>
-                <div id="conteudo-info">
-                    <h3>dolce.caffetteria@gmail.com</h3>
-                    <h3>(47) 3337-2537 ou</h3>
-                    <h3>(47) 98451-2537</h3> 
-                </div>
-            </div>
-            <div id="info-footer">
-                <div id="titulo-info"><h2>Endereço</h2></div>
-                <div id="conteudo-info">
-                    <h3>Rua São Paulo, Blumenau - SC</h3>
-                    <h3>número 05.</h3>
-                    <h3>Em frente a Furb</h3>
-  
-                </div>
-            </div>
-            <div id="info-footer">
-                <div id="titulo-info"><h2>Criadores</h2></div>
-                <div id="conteudo-info">
-                    <h3>Cristina Priester</h3>
-                    <h3>João Marcos da Silva</h3>
-                    <h3>Vanessa da Cunha Lopez</h3> 
-                </div>
-            </div>
-        </div>
-    </footer>
+      <div class="div-footer">
+          <div class="info-footer">
+              <div class="titulo-info"><h2>Contato</h2></div>
+              <div class="conteudo-info">
+                  <h3>dolce.caffetteria@gmail.com</h3>
+                  <h3>(47) 3337-2537 ou</h3>
+                  <h3>(47) 98451-2537</h3> 
+              </div>
+          </div>
+          <div class="info-footer">
+              <div class="titulo-info"><h2>Endereço</h2></div>
+              <div class="conteudo-info">
+                  <h3>Rua São Paulo, Blumenau - SC</h3>
+                  <h3>número 05.</h3>
+                  <h3>Em frente a Furb</h3>
+                  
+                  
+              </div>
+          </div>
+          <div class="info-footer">
+              <div class="titulo-info"><h2>Criadores</h2></div>
+              <div class="conteudo-info">
+                  <h3>Cristina Priester</h3>
+                  <h3>João Marcos da Silva</h3>
+                  <h3>Vanessa da Cunha Lopez</h3> 
+              </div>
+          </div>
+      </div>
+  </footer>
+
     <script>
          async function validacao(){
           if( document.getElementById("h3cidade").innerText == "Blumenau"){
