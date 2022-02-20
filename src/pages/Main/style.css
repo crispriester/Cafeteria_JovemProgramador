@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Gloria+Hallelujah&family=Homemade+Apple&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Caveat&family=Gloria+Hallelujah&family=Homemade+Apple&family=Kalam:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Caveat&family=Gloria+Hallelujah&family=Homemade+Apple&family=Kalam:wght@300&family=Poppins:wght@200;400&display=swap');
 
 
 * {
@@ -7,23 +9,53 @@
     padding: 0px;
 }
 
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 4em;
+    font-family: 'Caveat', cursive;
+    color: #170b0d;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    margin-top: 5%;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(34, 34, 34);
+}
+
+hr {
+    background-color: #39210b; 
+    height: 1px;
+}
+
+.divisor-texto-paragrafo {
+    margin: 2% 0% 3% 0%;
+    background-color: #8a5c32;
+    height: 6px;
+    width: 80px;
+}
+
+/* menu começa: */
 .bg-dark {
-    background-color: #170e0bf3 !important;
-}
-
-.container-inicio {
-    height: 95vh;
-    background-color: #800404;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    background-color: #170e0bfa !important;
 }
 
 #menu-home {
@@ -39,10 +71,66 @@
     position: fixed;
 }
 
-.logo img {
+#div-imagem-menu {
     width: 60px;
     height: 50px;
 }
+
+.imagem-logo {
+    background-image: url(../../assets/cafepngbranco.png);
+    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.botoes a {
+    margin-inline: 35px;
+    border: none;
+    background-color: transparent;
+}
+
+.botoes a {
+    color: rgb(255, 255, 255);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2em;
+}
+
+.botoes a:hover {
+    cursor: pointer;
+}
+
+.botoes a:hover div {
+    margin-top: 2px;
+    height: 2px;
+    background-color: rgb(160, 112, 7);
+}
+/* menu termina */
+
+/* tela inicial começa: */
+.container-inicio {
+    height: 95vh;
+    background-color: #800404;
+
+    justify-content: space-between;
+}
+
+.container {
+    margin-top: -15%;
+    padding: 0% 5% 0% 5%;
+}
+
+
+
+
+#introducao {
+    justify-content: space-between;
+    margin-bottom: 3%;
+}
+
+
+
+
+
 
 #div-texto-inicio {
     width: 40%;
@@ -64,22 +152,6 @@
     height: 100%;
 }
 
-.botoes button {
-    color: rgb(255, 255, 255);
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-inline: 30px;
-    font-size: medium;
-    border: none;
-    background-color: transparent;
-}
-
-.botoes button:hover div {
-    cursor: pointer;
-    margin-top: 2px;
-    height: 2px;
-    background-color: rgb(160, 112, 7);
-}
-
 #divisoria {
     width: 50%;
     height: 8vh;
@@ -89,10 +161,21 @@
     right: 0px;
     height: 88vh;
     width: 80%;
+
     background-image: url(../../assets/imagem-com-sombra.png);
     background-size: cover;
+
+    border-radius: 0px 0px 0px 10px;
 }
 
+#foto-cafe {
+    height: 85vh;
+    width: 25%;
+
+    background-image: url(../../assets/bule_cafe_xicara-com-fundo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 
 
 #titulo-cafeteria {
@@ -102,4 +185,25 @@
     color: white;
     font-family: 'Homemade Apple', cursive;
     font-size: 320%;
+}
+
+.titulo-paragrafo {
+    width: 50%;
+    align-self: flex-end;
+    
+    margin: 0% 10% 5% 0%;
+}
+
+#sobre {
+    margin: 7% 3% 5% 3%;
+}
+
+#foto-cafeteria-refeitorio {
+    height: 300px;
+    width: 500px;
+    border-radius: 15px;
+
+    background-image: url(../../assets/area-refeicao-cafeteria.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }

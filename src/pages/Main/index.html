@@ -4,65 +4,111 @@
     <meta charset="UTF-8">
     <title>Home</title>
 
+    <!--Styles CSS: -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../styles/style-footer.css">
+    <!--Favicon:-->
+    <link rel="icon" type="imagem/png" href="../../assets/favicon.png" />
+    <!--Jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 </head>
 <body>
     <!--=== Menu Começo ===-->
     <header id="menu-home" >
-        <div class="logo">
-            <img src="https://i.pinimg.com/236x/56/3b/ff/563bff39f0488705ea4344a34101f013--kitchen-decals-kitchen-art.jpg" alt="">
-        </div>
+        <div id="div-imagem-menu"></div>
+        
         <div id="divisoria"></div>
         <div class="botoes">
-            <button href="../Valores/index.html" class="btn-menu">
+            <a href="../Produtos/index.html">
                 Valores <div></div>
-            </button>
-            <button href="../Filiais/index.html"  class="btn-menu">
+            </a>
+             <a href="../Filiais/index.html">
                 Localização <div></div>
-            </button>
-            <button href="#sobre" class="btn-menu">
+            </a>
+            <a href="#sobre">
                 Sobre <div></div>
-            </button>
+            </a>
         </div>
     </header>
     <!--=== Menu Fim ===-->
 
     <!--=== Tela Inicial Começo ===-->
-    <div class="container-inicio">
+    <div class="container-inicio flex-row">
         <h1 id="titulo-cafeteria">Dolce Caffetteria</h1>
         <div id="div-texto-inicio">
             <p>A felicidade está nas pequenas coisas do dia a dia..</p>
         </div>
-        <div id="imagem-tela-inicial">
-
-        </div>
+        <div id="imagem-tela-inicial"></div>
     </div>
     <!--=== Tela Inicial Fim ===-->
 
-    <!--=== Introdução Começa ===-->
+    
     <div class="container">
-        <div id="foto-cafe">
+        <!--=== Introdução Começa ===-->
+        <div id="introducao" class="flex-row">
+            <div id="foto-cafe"></div>
+            <div class="flex-column align-items-center titulo-paragrafo">
+                <h1>Por que escolher a gente?</h1>
+                <hr class="divisor-texto-paragrafo">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi perferendis aliquid error vitae, est iste, cumque nesciunt eum pariatur veritatis reprehenderit. Nostrum quo maxime eos ullam aspernatur nisi neque alias.</p>
+            </div>
+        </div>
+        <!--=== Introdução termina ===-->
+        <hr>    
+        <!--=== Sobre Começa ===-->
+        <div id="sobre" class="flex-row">
+             <div class="flex-column align-items-center titulo-paragrafo">
+                <h1>Sobre nós</h1>
+                <hr class="divisor-texto-paragrafo">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi perferendis aliquid error vitae, est iste, cumque nesciunt eum pariatur veritatis reprehenderit. Nostrum quo maxime eos ullam aspernatur nisi neque alias.</p>
+            </div>
+            <div id="foto-cafeteria-refeitorio"></div>
+        </div>
+        <!--=== Sobre termina ===-->
+        <hr>
+        <!--=== Contate-nos Começa ===-->
+        <div id="contate-nos" class="flex-row">
+            <div id="cafe-esquerda" class="imagem-cafe"></div>
+            <div class="flex-column">
 
-        </div>
-        <div id="texto-introducao">
-            <h1>Por que escolher a gente?</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi perferendis aliquid error vitae, est iste, cumque nesciunt eum pariatur veritatis reprehenderit. Nostrum quo maxime eos ullam aspernatur nisi neque alias.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi perferendis aliquid error vitae, est iste, cumque nesciunt eum pariatur veritatis reprehenderit. Nostrum quo maxime eos ullam aspernatur nisi neque alias.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi perferendis aliquid error vitae, est iste, cumque nesciunt eum pariatur veritatis reprehenderit. Nostrum quo maxime eos ullam aspernatur nisi neque alias.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi perferendis aliquid error vitae, est iste, cumque nesciunt eum pariatur veritatis reprehenderit. Nostrum quo maxime eos ullam aspernatur nisi neque alias.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi perferendis aliquid error vitae, est iste, cumque nesciunt eum pariatur veritatis reprehenderit. Nostrum quo maxime eos ullam aspernatur nisi neque alias.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi perferendis aliquid error vitae, est iste, cumque nesciunt eum pariatur veritatis reprehenderit. Nostrum quo maxime eos ullam aspernatur nisi neque alias.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi perferendis aliquid error vitae, est iste, cumque nesciunt eum pariatur veritatis reprehenderit. Nostrum quo maxime eos ullam aspernatur nisi neque alias.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi perferendis aliquid error vitae, est iste, cumque nesciunt eum pariatur veritatis reprehenderit. Nostrum quo maxime eos ullam aspernatur nisi neque alias.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi perferendis aliquid error vitae, est iste, cumque nesciunt eum pariatur veritatis reprehenderit. Nostrum quo maxime eos ullam aspernatur nisi neque alias.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi perferendis aliquid error vitae, est iste, cumque nesciunt eum pariatur veritatis reprehenderit. Nostrum quo maxime eos ullam aspernatur nisi neque alias.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi perferendis aliquid error vitae, est iste, cumque nesciunt eum pariatur veritatis reprehenderit. Nostrum quo maxime eos ullam aspernatur nisi neque alias.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi perferendis aliquid error vitae, est iste, cumque nesciunt eum pariatur veritatis reprehenderit. Nostrum quo maxime eos ullam aspernatur nisi neque alias.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi perferendis aliquid error vitae, est iste, cumque nesciunt eum pariatur veritatis reprehenderit. Nostrum quo maxime eos ullam aspernatur nisi neque alias.</p>
-        </div>
+            </div>
+            <div id="cafe-esquerda" class="imagem-feijao"></div>
+       </div>
+       <!--=== Contate-nos termina ===-->
     </div>
     
+    <!--=== Footer começa ===-->
+        
+    <footer>
+        <div id="div-footer">
+            <div id="info-footer">
+                <div id="titulo-info"><h2>Contato</h2></div>
+                <div id="conteudo-info">
+                    <h3>dolce.caffetteria@gmail.com</h3>
+                    <h3>(47) 3337-2537 ou</h3>
+                    <h3>(47) 98451-2537</h3> 
+                </div>
+            </div>
+            <div id="info-footer">
+                <div id="titulo-info"><h2>Endereço</h2></div>
+                <div id="conteudo-info">
+                    <h3>Rua São Paulo, Blumenau - SC</h3>
+                    <h3>número 05.</h3>
+                    <h3>Em frente a Furb</h3>
+                </div>
+            </div>
+            <div id="info-footer">
+                <div id="titulo-info"><h2>Criadores</h2></div>
+                <div id="conteudo-info">
+                    <h3>Cristina Priester</h3>
+                    <h3>João Marcos da Silva</h3>
+                    <h3>Vanessa da Cunha Lopez</h3> 
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--=== Footer fim ===-->
+
     <script type="text/javascript">
         jQuery(function() {
 
@@ -71,9 +117,11 @@
                 if (jQuery(this).scrollTop() > 100) {
                     //alert("opa 1");
                     $("#menu-home").addClass("bg-dark");
+                    $("#div-imagem-menu").addClass("imagem-logo");
                 } else {
                     //alert("opa 2");
                     $("#menu-home").removeClass("bg-dark");
+                    $("#div-imagem-menu").removeClass("imagem-logo");
                 }
             });
         });

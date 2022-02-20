@@ -143,47 +143,4 @@ body {
 }
 /* -----CORPO DA PÁGINA TERMINA AQUI----- */
 
-/* FOOTER COMEÇA AQUI */
-footer{
-    margin-top: 8vh;
-    width: 100%;
-    height: 300px;
-    background-color: #39231b;
-    position: static;
-    bottom: 0;
-}
-
-#div-footer{
-    margin-top: 60px;
-    border-top: solid 2px;
-    border-color: #946737;
-    width: 100%;
-    height: 200px;
-    position: static;
-    bottom: 0;   
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    display: flex; 
-}
-
-#info-footer{
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    display: flex; 
-    padding: 0 120px 0 120px;
-    color: white;
-}
-
-#titulo-info{
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    border-bottom: solid 4px;
-    border-color: #946737;
-}
-
-#conteudo-info{
-    text-align: center;
-}
 
