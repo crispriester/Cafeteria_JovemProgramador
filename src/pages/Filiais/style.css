@@ -1,4 +1,5 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Balsamiq+Sans&family=Comfortaa:wght@300&family=Courgette&family=Rock+Salt&display=swap');
+*{
   margin: 0px;
   padding: 0px;
 }
@@ -10,121 +11,50 @@
   flex-direction: column;
 }
 #container {
-  width: 100vw;
   height: 100vh;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
   display: flex;
-  background-color: #f1e6e2;
+  background-color: white;
 }
 #b1{
     margin-top: 20px;
     background-color: #e4a45f;
-    border-radius: 10%;
-    border-color: rgb(66, 47, 5);
+    border-radius: 10px;
+    border-color: rgb(150, 112, 31);
+    padding: 4px 15px;
 }
 #cep{
     margin-top: 10px;
 }
-#texto{
+.texto{
     color: #946737;
+    font-family: 'Bad Script', cursive;
+    
+}
+.texto-verde{
+  color:rgb(235, 10, 10)d;
+}
+#mensagem{
+  font-size: large;
+}
+#img{
+  margin-top: 8px;
+  border-radius: 10px;
+}
+#imagem-localizacao{
+  margin-bottom: 15px;
+  width: 28px;
+}
+.flex-row{
+  display: flex;
+  flex-direction: row;
 }
 #content {
   height: 50%;
-  width: 50%;
+  width: 45%;
   border-radius: 5px 5px 5px 5px;
   box-shadow: 2px 2px 6px 2px rgba(51, 27, 12, 0.2);
 }
-#menu {
-  width: 100%;
 
-  height: 14vh;
-
-  background-color: black;
-
-  flex-direction: row;
-
-  display: flex;
-
-  align-items: center;
-}
-#left-menu {
-  display: flex;
-
-  align-items: center;
-
-  width: 50%;
-
-  height: 14vh;
-
-  justify-content: left;
-
-  padding-left: 2vw;
-}
-#right-menu {
-  display: flex;
-
-  align-items: center;
-
-  flex-direction: row;
-
-  width: 50%;
-
-  height: 14vh;
-
-  justify-content: right;
-}
-.link-pages {
-  margin-right: 6vw;
-
-  text-decoration: none;
-
-  color: #946737;
-}
-.link-pages:hover {
-  color: burlywood;
-
-  cursor: pointer;
-}
-
-/* -----MENU PRINCIPAL TERMINA AQUI----- */
-/* FOOTER COMEÇA AQUI */
-footer {
-  margin-top: 8vh;
-  width: 100%;
-  height: 40vh;
-  background-color: #39231b;
-  position: static;
-  bottom: 0;
-}
-#div-footer {
-  margin-top: 8vh;
-  border-top: solid 2px;
-  border-color: #946737;
-  width: 100%;
-  height: 30vh;
-  position: static;
-  bottom: 0;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  display: flex;
-}
-#info-footer {
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  padding: 0 120px 0 120px;
-  color: white;
-}
-#titulo-info {
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  border-bottom: solid 4px;
-  border-color: #946737;
-}
-#conteudo-info {
-  text-align: center;
-}
