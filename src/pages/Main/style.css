@@ -72,7 +72,7 @@ hr {
 
 #titulo-cafeteria {
     position: absolute;
-    top: 8%;
+    top: 5vh;
     left: 8%;
     color: white;
     font-family: 'Homemade Apple', cursive;
@@ -80,13 +80,24 @@ hr {
 }
 
 #div-texto-inicio {
-    width: 40%;
+    width: 30vw;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#div-texto-inicio p {
+    width: 70%;
+    margin-top: 150px;
+    text-align: right;
+    font-size: 1.1em;
+    color: white;
+    font-family: 'Kalam', cursive;
 }
 
 #imagem-tela-inicial {
     right: 0px;
     height: 88vh;
-    width: 80%;
+    width: 66vw;
 
     background-image: url(../../assets/imagem-com-sombra.png);
     background-size: cover;
@@ -117,15 +128,6 @@ hr {
     margin: 8% 3% 8% 3%;
 }
 
-#div-texto-inicio p {
-    width: 300px;
-    margin-top: 40%;
-    margin-left: 28%;
-    text-align: right;
-    font-size: 1.1em;
-    color: white;
-    font-family: 'Kalam', cursive;
-}
 
 #foto-cafeteria-refeitorio {
     height: 300px;
@@ -147,8 +149,8 @@ hr {
 .hr-faixa {
     height: 13px;
     margin: 20px 0px 20px 0px;
-    background-color:#8a5c32;
-    border-color: #8a5c32;
+    background-color:#9c762a;
+    border-color: #a87a21;
     border-radius: 3px;
 }
 

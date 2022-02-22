@@ -71,3 +71,15 @@
 :target {
     scroll-margin-top: 10.1em;
 }
+
+
+/* CSS PARA A BARRA DE SCROLL */
+
+::-webkit-scrollbar {
+    width: 9px;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background-color: #3d2c25;
+    border-radius: 10px;
+}
