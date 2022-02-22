@@ -2,17 +2,21 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Dulce Caffetteria</title>
+    <title>Dulce Caffetteria - Você está perto?</title>
 
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" href="../../styles/style-footer.css">
     <link rel="stylesheet" href="../../styles/style-menu.css">
+    <link rel="stylesheet" href="../../styles/style-scroll.css">
+
+    <link rel="icon" type="imagem/png" href="../../assets/favicon-clara.png" />
+
   </head>
   
   <body>
     <!--MENU PRINCIPAL COMEÇA AQUI-->
     <header id="menu-home" class="bg-dark">
-      <a href="index.html">
+      <a href="../Main/index.html">
         <div id="div-imagem-menu" class="imagem-logo"></div>
       </a>
       
@@ -33,19 +37,23 @@
 
     <div id="container">
       <div class="display-flex">
-        <h1 id="texto">Venha nos visitar</h1>
+        <h1 class="texto">Venha nos visitar</h1>
         <p>
           <label for="text1"> CEP </label>
-          <input id="cep" type="text" name="text1" />
+          <input id="cep" type="text" name="text1" placeholder="00000-000" />
         </p>
         <input id="b1" type="button" value="Procurar filial" />
+        <img id="img" src="../../assets/fachada-dolce-caffetteria.jpg" alt="Imagem Fachada" width="400px" title="Fachada">
       </div>
       <div id="content" class="display-flex">
-        <h3>Filiais que possuímos</h3>
+        <div class="flex-row">
+          <img id="imagem-localizacao" src="../../assets/simbolo_localidade.png" alt="Simbolo Local" title="Simbolo local">
+          <h2 class="texto">Filiais que possuímos</h2>
+        </div>
         <h4>CEP 89068-001, Rua Pedro Zimmermann 756, Itoupava Central, Blumenau-SC</h4>
-        <h4>CEP 89110‑004, Rua Pedro Zimmermann 756, Itoupava Central, Blumenau-SC</h4>
-        <h3>Seu enderço da pesquisa</h3>
-        <h4 id="h2rua">Informe seu endereço.-</h4>
+        <h4>CEP 89110‑004, Rua Adão Schmitt, 15, Centro, Gaspar-SC</h4>
+        <h2 class= "texto">Seu endereço da pesquisa</h2>
+        <h4 id="h2rua">Informe seu endereço</h4>
         <h4 id="h2bairro"></h4>
         <h4 id="h3cidade"></h4>
         <h4 id="mensagem"></h4>
@@ -66,10 +74,10 @@
           <div class="info-footer">
               <div class="titulo-info"><h2>Endereço</h2></div>
               <div class="conteudo-info">
-                  <h3>Rua São Paulo, Blumenau - SC</h3>
-                  <h3>número 05.</h3>
-                  <h3>Em frente a Furb</h3>
-                  
+                  <h3>Rua Pedro Zimmermann, 756, </h3>
+                  <h3>Itoupava Central, Blumenau- SC</h3>
+                  <h3>Rua Adão Schmitt, 15, Centro, Gaspar-SC</h3>
+                
                   
               </div>
           </div>
@@ -78,7 +86,7 @@
               <div class="conteudo-info">
                   <h3>Cristina Priester</h3>
                   <h3>João Marcos da Silva</h3>
-                  <h3>Vanessa da Cunha Lopez</h3> 
+                  <h3>Vanessa da Cunha Lopes</h3> 
               </div>
           </div>
       </div>
@@ -87,12 +95,15 @@
     <script>
          async function validacao(){
           if( document.getElementById("h3cidade").innerText == "Blumenau"){
+            document.getElementById("mensagem").style.color = '#105e10'
             document.getElementById("mensagem").innerHTML = "Temos uma filial em Blumenau. Venha nos visitar! "
           }
           else if(document.getElementById("h3cidade").innerText == "Gaspar"){
-            document.getElementById("mensagem").innerHTML = "Temos uma filial em Gaspar. Venha nos visitar! "
+            document.getElementById("mensagem").style.color = '#105e10'
+           document.getElementById("mensagem").innerHTML = "Temos uma filial em Gaspar. Venha nos visitar!"
           }
           else{
+            document.getElementById("mensagem").style.color = 'rgb(235, 10, 10)'
             document.getElementById("mensagem").innerHTML = "Infelizmente ainda não temos uma filial em sua cidade "
           } 
       }
