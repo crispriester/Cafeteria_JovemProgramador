@@ -192,5 +192,13 @@ hr {
     font-size: 14px;
 }
 
+#contate-nos button {
+    padding: 5px 30px;
+    border-radius: 5px;
 
+    border-color: #a8936ab7;
+    background-color: #f3ede7;
+
+    cursor: pointer;
+}
 
