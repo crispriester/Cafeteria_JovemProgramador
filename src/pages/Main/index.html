@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <title>Dolce Caffetteria</title>
@@ -15,19 +16,20 @@
     <!--Jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 </head>
+
 <body>
     <!--=== Menu Começo ===-->
     <header id="menu-home" class="bk-transparente">
         <a href="../Main/index.html">
-        <div id="div-imagem-menu"></div>
+            <div id="div-imagem-menu"></div>
         </a>
-        
+
         <div class="divisoria"></div>
         <div class="botoes">
             <a href="../Produtos/index.html">
                 Valores <div></div>
             </a>
-             <a href="../Filiais/index.html">
+            <a href="../Filiais/index.html">
                 Localização <div></div>
             </a>
             <a href="#sobre">
@@ -47,23 +49,30 @@
     </div>
     <!--=== Tela Inicial Fim ===-->
 
-    
+
     <div class="container">
         <!--=== Introdução Começa ===-->
         <div id="introducao" class="flex-row">
             <div id="foto-cafe"></div>
             <div class="flex-column align-items-center titulo-paragrafo">
                 <h1>Por que escolher a gente?</h1>
-                <p>Somos especializados em entregar o melhor café e confeitos do país. Aqui você irá encontrar deliciosos pratos, promoções, os melhores da casa e até checar se possuímos uma filial perto de você. Amou nossos produtos ou quer fazer algum comentário sobre nossa cafeteria? <a href="#contate-nos" style="color: #8a5c32;">Contate-nos!</a></p>
+                <p>Somos especializados em entregar o melhor café e confeitos do país. Aqui você irá encontrar
+                    deliciosos pratos, promoções, os melhores da casa e até checar se possuímos uma filial perto de
+                    você. Amou nossos produtos ou quer fazer algum comentário sobre nossa cafeteria? <a
+                        href="#contate-nos" style="color: #8a5c32;">Contate-nos!</a></p>
             </div>
         </div>
         <!--=== Introdução termina ===-->
-        <hr>    
+        <hr>
         <!--=== Sobre Começa ===-->
         <div id="sobre" class="flex-row">
-             <div class="flex-column align-items-center titulo-paragrafo">
+            <div class="flex-column align-items-center titulo-paragrafo">
                 <h1>Sobre nós</h1>
-                <p>Tudo começou com um grande sonho, e adivinhem? Deu tudo certo! Hoje somos uma das maiores confeitarias do país. Iniciamos com um negócio pequeno e familiar, sempre prezando o bem-estar do cliente e a qualidade dos produtos que fazíamos. Por conta de todo esse amor que colocamos em nosso trabalho, avançamos rápido e nos tornamos grandes. Tudo isso sem perder, é claro, a nossa essência!</p>
+                <p>Tudo começou com um grande sonho, e adivinhem? Deu tudo certo! Hoje somos uma das maiores
+                    confeitarias do país. Iniciamos com um negócio pequeno e familiar, sempre prezando o bem-estar do
+                    cliente e a qualidade dos produtos que fazíamos. Por conta de todo esse amor que colocamos em nosso
+                    trabalho, avançamos rápido e nos tornamos grandes. Tudo isso sem perder, é claro, a nossa essência!
+                </p>
             </div>
             <div id="foto-cafeteria-refeitorio"></div>
         </div>
@@ -77,16 +86,16 @@
                 <h1>Contate-nos!</h1>
                 <div id="inputs-contato" class="flex-column">
                     <label for="input-nome">Nome</label>
-                    <input type="text" name="input-nome" placeholder="Seu nome">
-                    
+                    <input type="text" name="input-nome" id="nome" placeholder="Seu nome">
+
                     <label for="telefone">Telefone</label>
-                    <input type="text" name="telefone" placeholder="(DDD) 00000-0000"/>
-                    
+                    <input type="text" name="telefone" id="telefone" placeholder="(DDD) 00000-0000" />
+
                     <label for="input-email">E-mail</label>
-                    <input type="email" name="input-email" placeholder="e-mail">
-                    
+                    <input type="email" name="input-email" id="email"  placeholder="e-mail">
+
                     <label for="por-onde-nos-conheceu">Por onde nos conheceu?</label>
-                    <input type="text" name="por-onde-nos-conheceu" list="escolhas" placeholder="Escolha">
+                    <input type="text" name="por-onde-nos-conheceu" id="ponde" list="escolhas" placeholder="Escolha">
                     <datalist id="escolhas">
                         <option value="Facebook"></option>
                         <option value="Instagram"></option>
@@ -94,31 +103,35 @@
                         <option value="Rádio"></option>
                         <option value="Outro"></option>
                     </datalist>
-                    
+
                 </div>
-                <button type="submit">Enviar</button>
+                <input type="button" id="enviar" value="Enviar">
             </div>
             <div id="cafe-direita" class="imagem-cafe"></div>
-       </div>
-       <hr class="hr-faixa">
-       <hr>
-       <!--=== Contate-nos termina ===-->
+        </div>
+        <hr class="hr-faixa">
+        <hr>
+        <!--=== Contate-nos termina ===-->
     </div>
-    
+
     <!--=== Footer começa ===-->
-        
+
     <footer>
         <div class="div-footer">
             <div class="info-footer">
-                <div class="titulo-info"><h2>Contato</h2></div>
+                <div class="titulo-info">
+                    <h2>Contato</h2>
+                </div>
                 <div class="conteudo-info">
                     <h3>dolce.caffetteria@gmail.com</h3>
                     <h3>(47) 3337-2537 ou</h3>
-                    <h3>(47) 98451-2537</h3> 
+                    <h3>(47) 98451-2537</h3>
                 </div>
             </div>
             <div class="info-footer">
-                <div class="titulo-info"><h2>Endereço</h2></div>
+                <div class="titulo-info">
+                    <h2>Endereço</h2>
+                </div>
                 <div class="conteudo-info">
                     <h3>Rua São Paulo, Blumenau - SC</h3>
                     <h3>número 05.</h3>
@@ -126,11 +139,13 @@
                 </div>
             </div>
             <div class="info-footer">
-                <div class="titulo-info"><h2>Criadores</h2></div>
+                <div class="titulo-info">
+                    <h2>Criadores</h2>
+                </div>
                 <div class="conteudo-info">
                     <h3>Cristina Priester</h3>
                     <h3>João Marcos da Silva</h3>
-                    <h3>Vanessa da Cunha Lopes</h3> 
+                    <h3>Vanessa da Cunha Lopes</h3>
                 </div>
             </div>
         </div>
@@ -138,9 +153,9 @@
     <!--=== Footer fim ===-->
 
     <script type="text/javascript">
-        jQuery(function() {
+        jQuery(function () {
 
-            jQuery(window).scroll(function() {
+            jQuery(window).scroll(function () {
 
                 if (jQuery(this).scrollTop() > 100) {
                     //alert("opa 1");
@@ -153,6 +168,24 @@
                 }
             });
         });
+
+        function cadastrar() {
+            var nomeValue = document.getElementById("nome").value;
+            var emailValue = document.getElementById("email").value;
+            var telefoneValue = document.getElementById("telefone").value;
+            var pondeValue = document.getElementById("ponde").value;
+
+            var pessoa = {
+                name: nomeValue,
+                telefone: telefoneValue,
+                email: emailValue,
+                por_onde_nos_conheceu: pondeValue
+            };
+
+            console.log(pessoa);
+        }
+        document.getElementById("enviar").addEventListener("click", cadastrar) ; 
     </script>
 </body>
+
 </html>
