@@ -41,7 +41,7 @@
       <h1 class="texto">Venha nos visitar</h1>
       <p>
         <label for="text1"> CEP </label>
-        <input id="cep" type="text" name="text1" placeholder="00000-000" />
+        <input id="cep" type="text" name="text1" placeholder="00000-000" maxlength="8" />
       </p>
       <input id="b1" type="button" value="Procurar filial" />
       <img id="img" src="../../assets/fachada-dolce-caffetteria.jpg" alt="Imagem Fachada" width="350px" title="Fachada">
@@ -115,25 +115,35 @@
         document.getElementById("mensagem").innerHTML = cepInvalido ? "CEP Inválido!" : "Infelizmente ainda não temos uma filial em sua cidade "
       }
     }
-    async function teste() {
+    async function validarCep() {
       const cep = document.getElementById("cep").value;
-      const response = await fetch(`http://viacep.com.br/ws/${cep}/json/`);
-      const json = await response.json();
-      if (json.erro) {
+
+      var validacep = /^[0-9]{8}$/;
+
+      if (!validacep.test(cep)) {
         document.getElementById("h2rua").innerHTML = "";
         document.getElementById("h2bairro").innerHTML = "";
         document.getElementById("h3cidade").innerHTML = "";
         validacao(true);
       }
       else {
-        document.getElementById("h2rua").innerHTML = json.logradouro;
-        document.getElementById("h2bairro").innerHTML = json.bairro;
-        document.getElementById("h3cidade").innerHTML = json.localidade;
-        validacao(false);
+        const response = await fetch(`http://viacep.com.br/ws/${cep}/json/`);
+        const json = await response.json();
+        if (json.erro) {
+          document.getElementById("h2rua").innerHTML = "";
+          document.getElementById("h2bairro").innerHTML = "";
+          document.getElementById("h3cidade").innerHTML = "";
+          validacao(true);
+        }
+        else {
+          document.getElementById("h2rua").innerHTML = json.logradouro;
+          document.getElementById("h2bairro").innerHTML = json.bairro;
+          document.getElementById("h3cidade").innerHTML = json.localidade;
+          validacao(false);
+        }
       }
-      
     }
-    document.getElementById("b1").addEventListener("click", teste); 
+    document.getElementById("b1").addEventListener("click", validarCep); 
   </script>
 </body>
 

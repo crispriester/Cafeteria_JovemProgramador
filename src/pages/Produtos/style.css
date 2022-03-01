@@ -40,13 +40,15 @@
     align-items: center;
     justify-content: center;
     display: flex;
-    
+    transition: height 0.1s;
 }
 
 .direcionador:hover {
     background-color: rgb(238, 195, 138);
     opacity: 1.5;
     cursor: pointer;
+    width: 301px;
+    height: 78px;
 }
 
 #teste {
