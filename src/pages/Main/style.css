@@ -192,7 +192,13 @@ hr {
     font-size: 14px;
 }
 
+#contate-nos textarea {
+    padding: 5px;
+    border-color: #a8936ab7;
+}
+
 #enviar {
+    margin-top: 15px;
     padding: 5px 30px;
     border-radius: 5px;
 
