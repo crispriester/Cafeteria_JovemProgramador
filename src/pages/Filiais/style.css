@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Balsamiq+Sans&family=Comfortaa:wght@300&family=Courgette&family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Balsamiq+Sans&family=Comfortaa:wght@300&family=Courgette&family=Hubballi&family=Rock+Salt&family=Source+Sans+Pro:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Balsamiq+Sans&family=Comfortaa:wght@300&family=Courgette&family=Hubballi&family=Oswald:wght@200&family=Rock+Salt&family=Source+Sans+Pro:wght@200&family=Ubuntu:wght@300&display=swap');
 *{
   margin: 0px;
   padding: 0px;
@@ -28,6 +30,13 @@
 #cep{
     margin-top: 10px;
 }
+h4 {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+label{
+  font-family: 'Ubuntu', sans-serif;
+}
+
 .texto{
     color: #946737;
     font-family: 'Bad Script', cursive;
@@ -44,6 +53,7 @@
 #img{
   margin-top: 8px;
   border-radius: 10px;
+  width: 450px;
 }
 #imagem-localizacao{
   margin-bottom: 15px;
@@ -60,8 +70,8 @@
 }
 
 #content {
-  height: 60%;
-  width: 45%;
+  height: 425px;
+  width: 600px;
   border-radius: 5px 5px 5px 5px;
   box-shadow: 2px 2px 6px 2px rgba(51, 27, 12, 0.2);
 }
